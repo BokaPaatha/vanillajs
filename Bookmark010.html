@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+	<h1>Single page application.</h1>
+	<h3>We don't need anything else apart from vanilla js to code a
+		Single Page Application.</h3>
+
+
+
+	<div style='background-color: pink;float: left;'>
+		<div id="left-panel"
+			style="float: left; background-color: green; padding-right:50px; margin:2px;">
+			<ul>
+				<li><a href="#first">Home page</a></li>
+				<li><a href="#second">Second page</a></li>
+				<li><a href="#third">Third page</a></li>
+			</ul>
+
+		</div>
+		<div id="content"
+			style="float: left; width: 200px; position: relative;"></div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	window.addEventListener('hashchange', function() {
+		console.log(window.location.hash);
+		var content;
+		if (window.location.hash === '#first') {
+			content = "Make a ajax call and get First page.";
+		} else if (window.location.hash === '#second') {
+			content = "Make a ajax call and get Second page.";
+		} else if (window.location.hash === '#third') {
+			content = "Make a ajax call and get Third page.";
+		}
+		document.getElementById("content").innerHTML = content;
+	});
+</script>
+
+<!--  
+Thanks to 
+https://www.youtube.com/watch?v=qvHecQOiu8g
+
+How the heck do we get js autocomplete on eclipse? This is ridiculous. 
+-->
+
+</html>
+
