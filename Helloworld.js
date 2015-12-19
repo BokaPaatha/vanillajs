@@ -8,5 +8,5 @@ alert ("The count is " + count ) ;
 // Being able to log is some consolation. 
 console.log("There is no consolation.") ; 
 
-// Now for some DOM modification by JS. 
-document.getElementById("say-something").innerHTML = "Hello JavaScript";
+var name = "Partha" ;
+console.log(name.length) ; 
