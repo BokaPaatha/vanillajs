@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+	<h1>Bookmark and single page application.</h1>
+	<h3>The bookmarks do not really need to be there on the page.</h3>
+	<a href="#first">Go to one.</a>
+	<br />
+	<a href="#second">Go to two.</a>
+	<br />
+	<a href="#third">Go to third.</a>
+	<br />
+
+	<br />
+	<h2 id="first">This is the first hashtag</h2>
+	<br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	Quisque cursus dolor nec nisl finibus semper. Fusce aliquet nulla ex,
+	ut tempus neque feugiat ut. Sed a libero sit amet mi condimentum
+	
+</body>
+
+<script type="text/javascript">
+	window.addEventListener('hashchange', function() {
+		console.log(window.location.hash);
+	});
+</script>
+
+<!--  
+Thanks to 
+https://www.youtube.com/watch?v=qvHecQOiu8g
+
+How the heck do we get js autocomplete on eclipse? This is ridiculous. 
+-->
+
+</html>
+
